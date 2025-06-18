@@ -1,8 +1,8 @@
 <script setup>
 import router from "@/router";
 import { reactive } from "vue";
-import axios from "axios";
 import { useToast } from "vue-toastification";
+import axios from "axios";
 
 const form = reactive({
   type: "Full-Time",
@@ -37,7 +37,6 @@ const handleSubmit = async () => {
 
   try {
     const response = await axios.post("/api/jobs", newJob);
-
     toast.success("Job Added Successfully");
     router.push(`/jobs/${response.data.id}`);
   } catch (error) {
@@ -147,8 +146,8 @@ const handleSubmit = async () => {
               >Company Name</label
             >
             <input
-              v-model="form.company.name"
               type="text"
+              v-model="form.company.name"
               id="company"
               name="company"
               class="border rounded w-full py-2 px-3"

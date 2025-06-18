@@ -29,3 +29,4 @@ coverage
 
 *.tsbuildinfo
 _theme_files
+src/jobs.json

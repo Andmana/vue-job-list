@@ -1,30 +1,33 @@
 # vue-job-list
 
-This template should help get you started developing with Vue 3 in Vite.
+This a job listing project build with Vue JS
 
-## Recommended IDE Setup
+<img src="public/preview.png" />
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Usage
 
-## Customize configuration
+This project uses JSON-Server for a mock backend
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Install Dependencies
 
-## Project Setup
-
-```sh
-pnpm install
+```bash
+npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Run JSON Server
 
-```sh
-pnpm dev
+The server will run on http://localhost:8000
+
+```bash
+npm run server
 ```
 
-### Compile and Minify for Production
+### Run Vite Frontend
 
-```sh
-pnpm build
+Vue will run on http://localhost:3000
+
+```bash
+npm run dev
 ```
+
 # vue-job-list
